@@ -1,0 +1,144 @@
+<!--note-->
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O'Fig | Figurines et statuettes</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+  </head>
+  <body>
+    <!-- Création d'un bouton de soldes -->
+    <button class="sales-btn">Soldes</button>
+
+    <!-- Entête de page-->
+    <!-- Emmet :  header>h1>strong^h2>em -->
+    <header>
+      <h1>oFig <strong>Figurines et statuettes</strong></h1>
+      <h2>Votre panier <em>2 produits</em></h2>
+    </header>
+
+    <main class="container">
+      <form class="form">
+        <!---->
+        <!-- PREFERENCE LIVRAISON -->
+        <section class="cart-section">
+          <h2 class="cart-section__title">Préférences de livraison</h2>
+          <div class="cart-delivery">
+            <!-- LEFT SIDE - QUESTION -->
+            <div>
+              <div class="cart-delivery__part">
+                <h3 class="cart-delivery__part-title">
+                  Où souhaitez-vous être livré ?
+                </h3>
+                <div>
+                  <input
+                    type="radio"
+                    name="adressSelection"
+                    class="form__radio"
+                  />
+                  <label class="form__radio-label">Mon adresse courante</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="adressSelection"
+                    checked
+                    class="form__radio"
+                  />
+                  <label class="form__radio-label">Autre adresse</label>
+                </div>
+              </div>
+
+              <!-- LEFT SIDE - OPTION -->
+              <div>
+                <h3>Options</h3>
+                <div>
+                  <input type="checkbox" checked />
+                  <label>Suivi de livraison par sms (inclus)</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Satisfait ou remboursé (+ 2 euros)</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Garantie 2 ans (+ 10 euros)</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE ADRESS /INFORMATIONS -->
+            <div>
+              <!-- ADRESS -->
+              <div class="cart-delivery__part">
+                <h3 class="cart-delivery__part-title">Adresse</h3>
+                <div>
+                  <input type="text" class="form__input" />
+                  <label class="form__label-input">Rue</label>
+                </div>
+                <div>
+                  <input type="text" class="form__input" />
+                  <label class="form__label-input">Code postal</label>
+                </div>
+                <div>
+                  <input class="form__input" type="text" />
+                  <label class="form__label-input">Ville</label>
+                </div>
+              </div>
+
+              <!-- INFORMATIONS -->
+              <div>
+                <h3 class="cart-delivery__part-title">
+                  Informations complémentaires
+                </h3>
+
+                <div>
+                  <label class="form__label-input"
+                    >Interphone, bâtiment, etc.</label
+                  >
+                  <textarea class="form__textarea"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Prix -->
+        <section class="cart-section">
+          <div class="cart-total">
+            <span class="cart-total__label">Montant total à régler :</span>
+            <span class="cart-total__price">197€</span>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cart-section">
+          <div class="cart-actions">
+            <button class="button">Continuer vos achats</button>
+            <button class="button button--red" type="submit">
+              Valider et payer
+            </button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <p>oFig - toutes les images sont sous copyright SquareEnix</p>
+    </footer>
+  </body>
+</html>
