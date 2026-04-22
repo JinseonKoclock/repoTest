@@ -9,7 +9,7 @@ import { stdin as input, stdout as output } from "node:process";
 const answers = [];
 
 const psy = readline.createInterface({ input, output });
-const test = readline.createInterface({ input, output });
+// const test = readline.createInterface({ input, output }); impossible d'avoir 2 interfaces
 
 console.log("Bonjour, je suis votre psy virtuel. Parlez-moi de vous");
 
